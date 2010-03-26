@@ -11,6 +11,7 @@ yakuake &
 pidgin &
 dropbox start
 gnome-do &
+gnome-gmail-notifier &
 firefox &
 # this works b/c user_allow_other is enabled in /etc/fuse.conf
 curlftpfs -o umask=0777,uid=1000,gid=1000,allow_other ftp://cfibusers:cf2006ib@bioinformatics.biomed.drexel.edu/TEMPORARY ~/home/perry/dt/ 
