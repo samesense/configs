@@ -12,7 +12,8 @@ pidgin &
 dropbox start
 gnome-do &
 firefox &
-sudo curlftpfs -o umask=0777,uid=1000,gid=1000,allow_other ftp://cfibusers:cf2006ib@bioinformatics.biomed.drexel.edu/TEMPORARY ~/home/perry/dt/ 
+# this works b/c user_allow_other is enabled in /etc/fuse.conf
+curlftpfs -o umask=0777,uid=1000,gid=1000,allow_other ftp://cfibusers:cf2006ib@bioinformatics.biomed.drexel.edu/TEMPORARY ~/home/perry/dt/ 
 # # This prevents the panel from failing if it loads too fast
 # if pgrep tint
 # then exec openbox
